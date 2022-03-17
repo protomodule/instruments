@@ -30,6 +30,10 @@
   },
   "author": "Lukas Korl <hello@lukaskorl.com> (https://lukaskorl.com/)",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "bugs": {
     "url": "https://github.com/protomodule/instruments/issues"
   },
