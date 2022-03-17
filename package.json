@@ -1,6 +1,6 @@
 {
   "name": "@protomodule/instruments",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Frontend instruments for webbrowser applications which follow protomodule compatible practices.",
   "keywords": [
     "typescript",
