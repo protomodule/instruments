@@ -1,0 +1,47 @@
+{
+  "name": "@protomodule/instruments",
+  "version": "0.0.0",
+  "description": "Frontend instruments for webbrowser applications which follow protomodule compatible practices.",
+  "keywords": [
+    "typescript",
+    "env",
+    "chalk",
+    "log",
+    "browser"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "LICENSE",
+    "package.json",
+    "dist/"
+  ],
+  "scripts": {
+    "build": "npx tsc -p tsconfig.json && npx tsc -p tsconfig-cjs.json",
+    "watch": "npx tsc-watch -p tsconfig-cjs.json --onSuccess \"node dist/cjs/index.js\"",
+    "test": "echo \"🟡 No test specified\" && exit 0",
+    "release": "npx np",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/protomodule/instruments.git"
+  },
+  "author": "Lukas Korl <hello@lukaskorl.com> (https://lukaskorl.com/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/protomodule/instruments/issues"
+  },
+  "homepage": "https://github.com/protomodule/instruments#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "envalid": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "tsc": "^2.0.4",
+    "tsc-watch": "^4.6.2",
+    "typescript": "^4.6.2"
+  }
+}
