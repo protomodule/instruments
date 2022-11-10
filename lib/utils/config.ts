@@ -1,4 +1,3 @@
-import "dotenv/config"
 import { chalk, error, box } from "./chalk"
 import { ValidatorSpec, cleanEnv, makeValidator } from "envalid"
 
